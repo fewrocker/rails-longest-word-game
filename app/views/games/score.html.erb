@@ -1,0 +1,22 @@
+<div class="wrapper-game-results">
+  <div class="container-game-results text-center">
+    <h1>Results</h1>
+
+    <% if @result_main == "Fail!" %>
+      <h2 class="result_fail"> <%= @result_main %></h2>
+      <% else %>
+      <h2 class="result_success"> <%= @result_main %></h2>
+      <% end %>
+
+      <h3> <%= @result_description %></h3>
+
+      <h3 class="score-tag">Your score: <span class="score-text"><%= @result_score %></span></h2>
+  </div>
+
+  <%= link_to :new do %>
+    <div class="restart-button">
+      <h2>Try again</h2>
+    </div>
+  <% end %>
+
+</div>

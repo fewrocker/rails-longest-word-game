@@ -1,0 +1,78 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper-game {
+  height: 100vh;
+  background-color: rgba(220,220,220,1);
+  padding: 300px 0;
+  position: relative;
+}
+
+.container-game {
+  background-color: rgba(130,175,250,0.8);
+  margin: -100px 300px 0 300px;
+  height: 500px;
+  box-shadow: 2px 2px rgba(100,100,100,0.8);
+  padding-top: 50px;
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: darkblue;
+  }
+}
+
+.letter-instance {
+  border: 2px solid black;
+  background-color: rgba(50, 75, 120, 0.5);
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  font-size: 50px;
+  color: white;
+  box-shadow: 2px 2px rgba(100,100,100,0.8);
+}
+
+.letter-list {
+  margin-bottom: 80px;
+}
+
+#word-guess {
+  height: 75px;
+  width: 700px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid darkgrey;
+}
+
+#score-box {
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  width: 1255px;
+  padding: 20px 50px;
+  background-color: rgba(130,175,250,0.8);
+  box-shadow: 2px 2px rgba(100,100,100,0.8);
+  text-align: center;
+}
+
+
+.time-bar {
+  position: absolute;
+  top: 750px;
+  left: 300px;
+  width: 1255px;
+  height: 80px;
+  padding: 0px 0px;
+  background-color: rgba(130,175,250,0.8);
+  box-shadow: 2px 2px rgba(100,100,100,0.8);
+  text-align: center;
+
+  td {
+    border: 1px solid black;
+    height: 80px;
+    width: calc(1255px / 10);
+  }
+}
